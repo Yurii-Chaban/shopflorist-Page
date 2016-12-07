@@ -1,6 +1,110 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+
+// IMPORT FONT FAMILY
+
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: url('HelveticaNeue-Bold.woff') format('woff'),
+       url('HelveticaNeue-Bold.ttf') format('truetype'),
+       url('HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../resources/HelveticaNeue/Bold/HelveticaNeueBold.eot');
+  src: url('../resources/HelveticaNeue/Bold/HelveticaNeueBold.woff2') format('woff2'),
+       url('../resources/HelveticaNeue/Bold/HelveticaNeueBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../resources/HelveticaNeue/Italic/HelveticaNeue-Italic.woff') format('woff'),
+       url('../resources/HelveticaNeue/Italic/HelveticaNeue-Italic.ttf') format('truetype'),
+       url('../resources/HelveticaNeue/Italic/HelveticaNeue-Italic.svg#HelveticaNeue-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../resources/HelveticaNeue/Italic/HelveticaNeueItalic.eot');
+  src: url('../resources/HelveticaNeue/Italic/HelveticaNeueItalic.woff2') format('woff2'),
+       url('../resources/HelveticaNeue/Italic/HelveticaNeueItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../resources/HelveticaNeue/Regular/HelveticaNeue.eot');
+  src: url('../resources/HelveticaNeue/Regular/HelveticaNeue.woff2') format('woff2'),
+       url('../resources/HelveticaNeue/Regular/HelveticaNeue.woff') format('woff'),
+       url('../resources/HelveticaNeue/Regular/HelveticaNeue.ttf') format('truetype'),
+       url('../resources/HelveticaNeue/Regular/HelveticaNeue.svg#HelveticaNeue') format('svg'),
+       url('../resources/HelveticaNeue/Regular/HelveticaNeue.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$body-bg: rgba(153,4,51, 0.03);
+$delivery-color: #79072b;
+$slider-border-color: #79072b;
+
+
+body {
+	font-family: 'HelveticaNeue', 'Arial', 'Helvetica', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	background: $body-bg;
+}
+
+$HelveticaNeue: 'HelveticaNeue', sans-serif;
+
+@mixin site-container {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	background-size: contain;
+	background-position: center;
+	@include border-box;
+}
+@mixin transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.wrapper {
+	max-width: 1010px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	@include border-box;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@import "header";
+@import "footer";
+@import "main-page";
+@import "media";

@@ -1,0 +1,163 @@
+.slider-section {
+	@include site-container;
+	overflow: hidden;
+
+	.shopfloristqueen-slider {
+		position: relative;
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+
+
+		.fa {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 37px;
+			height: 37px;
+			font-size: 40px;
+			line-height: 35px;
+			font-weight: lighter;
+			text-align: center;
+			border: 1px solid #646464;
+			border-radius: 100%;
+			z-index: 2;
+			color: #646464;
+			@include transition;
+
+			&:hover {
+				color: #eb6772;
+				border-color: #eb6772;
+			}
+
+		} 
+		.fa-angle-right {
+			right: -45px;
+		}
+		.fa-angle-left {
+			left: -45px;
+		}
+
+		.slick-slide {
+			overflow: hidden;
+
+			.slider-item {
+				@include border-box;
+				background-color: white;
+				border: 2px solid $slider-border-color;
+				overflow: hidden;
+				
+				.logo {
+					max-width: 122px;
+					margin: 10px auto;
+					text-align: center;
+
+					img {
+						max-width: 100%;
+					}
+				}
+
+				.img-wrapper {
+					width: 132px;
+					height: 145px;
+					margin: 0 auto;
+					text-align: center;
+
+					img {
+						max-width: 100%;
+					}
+				}
+
+				.item-description {
+					width: 150px;
+					margin: 0 auto;
+					text-align: center;
+					color: black;
+					font: 400 11px / 15px $HelveticaNeue;
+					text-transform: uppercase;
+				}
+
+				.latest-price {
+					position: relative;
+					width: 46px;
+					margin: 10px auto;
+					text-align: center;
+					color: black;
+					font: 400 12px / 18px $HelveticaNeue;
+					text-transform: uppercase;
+
+					&:before {
+						position: absolute;
+						content: "";
+						top: 8px;
+						left: 4px;
+						width: 80%;
+						height: 1px;
+						background-color: red;
+						-moz-transform: rotate(-15deg); /* Для Firefox */
+						-ms-transform: rotate(-15deg); /* Для IE */
+						-webkit-transform: rotate(-15deg); /* Для Safari, Chrome, iOS */
+						-o-transform: rotate(-15deg); /* Для Opera */
+						transform: rotate(-15deg);
+					}
+				}
+
+				.new-price {
+					margin: 10px auto;
+					text-align: center;
+					color: black;
+					font: 700 22px / 24px $HelveticaNeue;
+					text-transform: uppercase;
+				}
+
+				.buy-btn {
+					display: block;
+					width: 74px;
+					height: 25px;
+					margin: 10px auto;
+					text-align: center;
+					color: #5b5b5b;
+					font: 400 10px / 25px $HelveticaNeue;
+					border: 1px solid #6c6c6c;
+					border-radius: 4px;
+				}
+
+				.for-delivery-title {
+					margin: 15px auto 20px;
+					text-align: center;
+					color: #79072b;
+					font: 400 16px / 23px $HelveticaNeue;
+					font-style: italic;
+				}
+			}
+		}
+
+		// .slick-center {
+			
+
+		// 	.slider-item {
+		// 		margin: 15px 10px;
+		// 	}
+		// }
+	}
+
+	.text-block {
+
+		.img-wrapper {
+			width: 101px;
+			height: 40px;
+			margin: 20px auto 23px;
+			text-align: center;
+
+			img {
+				max-width: 100%;
+			}
+		}
+
+		p {
+			margin: 0 auto 32px;
+			color: #444;
+			font: 400 16px / 22px $HelveticaNeue;
+		}
+	}
+}

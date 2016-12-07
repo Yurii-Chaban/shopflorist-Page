@@ -1,0 +1,22 @@
+header {
+	.title-border {
+		max-width: 976px;
+		margin: 0 auto;
+		padding: 20px 0 16px;
+		text-align: center;
+		border-bottom: 2px solid #000;
+
+		.page-title {
+			color: black;
+			font: 400 27px / 33px $HelveticaNeue;
+		}
+	}
+
+	.page-sign {
+		margin: 19px auto 16px;
+		color: black;
+		text-align: center;
+		font: 400 16px / 22px $HelveticaNeue;
+		font-style: italic;
+	}
+}
