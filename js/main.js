@@ -12,6 +12,7 @@ $(document).ready(function(){
     initialSlide: 1,
     arrows: true,
     slidesToShow: 3,
+    focusOnSelect: false,
     responsive: [
     {
       breakpoint: 768,
@@ -21,6 +22,7 @@ $(document).ready(function(){
         initialSlide: 0,
         centerMode: true,
         centerPadding: '10px',
+        focusOnSelect: false,
         slidesToShow: 3
       }
     },
@@ -31,6 +33,7 @@ $(document).ready(function(){
         centerMode: true,
         centerPadding: '0',
         initialSlide: 1,
+        focusOnSelect: false,
         slidesToShow: 1
       }
     }

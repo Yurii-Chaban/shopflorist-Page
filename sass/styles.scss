@@ -66,6 +66,10 @@ body {
 	background: $body-bg;
 }
 
+* {
+  outline: none;
+}
+
 $HelveticaNeue: 'HelveticaNeue', sans-serif;
 
 @mixin site-container {

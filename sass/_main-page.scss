@@ -24,6 +24,7 @@
 			z-index: 2;
 			color: #646464;
 			@include transition;
+			cursor: pointer;
 
 			&:hover {
 				color: #eb6772;
@@ -40,6 +41,7 @@
 
 		.slick-slide {
 			overflow: hidden;
+			outline: none;
 
 			.slider-item {
 				@include border-box;
