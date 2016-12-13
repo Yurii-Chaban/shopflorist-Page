@@ -52,6 +52,17 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'HelveticaNeueLTPro';
+  src: url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.eot');
+  src: url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.woff2') format('woff2'),
+  url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.woff') format('woff'),
+  url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.ttf') format('truetype'),
+  url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.svg#HelveticaNeueLTPro-ThEx') format('svg'),
+  url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 $body-bg: rgba(153,4,51, 0.03);
 $delivery-color: #79072b;
@@ -71,6 +82,7 @@ body {
 }
 
 $HelveticaNeue: 'HelveticaNeue', sans-serif;
+$HelveticaNeueLTPro: 'HelveticaNeueLTPro', sans-serif;
 
 @mixin site-container {
 	position: relative;
