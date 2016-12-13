@@ -297,9 +297,21 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
 }
 /* line 79, ../sass/_main-page.scss */
 .slider-section .shopfloristqueen-slider .slick-slide .slider-item .img-wrapper img {
-  max-width: 100%;
+  width: 100%;
 }
 /* line 84, ../sass/_main-page.scss */
+.slider-section .shopfloristqueen-slider .slick-slide .slider-item .img-wrapper-main {
+  max-width: 85%;
+  margin: 20px auto;
+  max-height: 500px;
+  overflow: hidden;
+}
+/* line 90, ../sass/_main-page.scss */
+.slider-section .shopfloristqueen-slider .slick-slide .slider-item .img-wrapper-main img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 98, ../sass/_main-page.scss */
 .slider-section .shopfloristqueen-slider .slick-slide .slider-item .item-description {
   width: 150px;
   margin: 0 auto;
@@ -308,7 +320,7 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   font: 400 11px/15px "HelveticaNeue", sans-serif;
   text-transform: uppercase;
 }
-/* line 93, ../sass/_main-page.scss */
+/* line 107, ../sass/_main-page.scss */
 .slider-section .shopfloristqueen-slider .slick-slide .slider-item .latest-price {
   position: relative;
   width: 46px;
@@ -318,7 +330,7 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   font: 400 12px/18px "HelveticaNeue", sans-serif;
   text-transform: uppercase;
 }
-/* line 102, ../sass/_main-page.scss */
+/* line 116, ../sass/_main-page.scss */
 .slider-section .shopfloristqueen-slider .slick-slide .slider-item .latest-price:before {
   position: absolute;
   content: "";
@@ -337,7 +349,7 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   /* ╨Ф╨╗╤П Opera */
   transform: rotate(-15deg);
 }
-/* line 118, ../sass/_main-page.scss */
+/* line 132, ../sass/_main-page.scss */
 .slider-section .shopfloristqueen-slider .slick-slide .slider-item .new-price {
   margin: 10px auto;
   text-align: center;
@@ -345,7 +357,7 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   font: 700 22px/24px "HelveticaNeue", sans-serif;
   text-transform: uppercase;
 }
-/* line 126, ../sass/_main-page.scss */
+/* line 140, ../sass/_main-page.scss */
 .slider-section .shopfloristqueen-slider .slick-slide .slider-item .buy-btn {
   display: block;
   width: 74px;
@@ -361,12 +373,12 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 138, ../sass/_main-page.scss */
+/* line 152, ../sass/_main-page.scss */
 .slider-section .shopfloristqueen-slider .slick-slide .slider-item .buy-btn:hover {
   background: #79072b;
   color: #fff;
 }
-/* line 144, ../sass/_main-page.scss */
+/* line 158, ../sass/_main-page.scss */
 .slider-section .shopfloristqueen-slider .slick-slide .slider-item .for-delivery-title {
   margin: 15px auto 20px;
   text-align: center;
@@ -374,18 +386,34 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   font: 400 16px/23px "HelveticaNeue", sans-serif;
   font-style: italic;
 }
-/* line 169, ../sass/_main-page.scss */
+/* line 165, ../sass/_main-page.scss */
+.slider-section .shopfloristqueen-slider .slick-slide .slider-item .for-delivery-title a {
+  color: #79072b;
+}
+/* line 174, ../sass/_main-page.scss */
+.slider-section .shopfloristqueen-slider .slick-center .slider-item .img-wrapper-main {
+  max-width: 85%;
+  margin: 20px auto;
+  max-height: 500px;
+  overflow: hidden;
+}
+/* line 180, ../sass/_main-page.scss */
+.slider-section .shopfloristqueen-slider .slick-center .slider-item .img-wrapper-main img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 191, ../sass/_main-page.scss */
 .slider-section .text-block .img-wrapper {
   width: 101px;
   height: 40px;
   margin: 20px auto 23px;
   text-align: center;
 }
-/* line 175, ../sass/_main-page.scss */
+/* line 197, ../sass/_main-page.scss */
 .slider-section .text-block .img-wrapper img {
   max-width: 100%;
 }
-/* line 180, ../sass/_main-page.scss */
+/* line 202, ../sass/_main-page.scss */
 .slider-section .text-block p {
   margin: 0 auto 32px;
   color: #444;
@@ -455,7 +483,7 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item {
     border: 2px solid #79072b;
   }
-  /* line 71, ../sass/_media.scss */
+  /* line 72, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center {
     margin: 23px 0;
     moz-transform: scale(1.08);
@@ -466,7 +494,7 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
     opacity: 1;
     transform: scale(1.08);
   }
-  /* line 81, ../sass/_media.scss */
+  /* line 82, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center:hover {
     moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -476,48 +504,63 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
     opacity: 1;
     transform: scale(1.1);
   }
-  /* line 93, ../sass/_media.scss */
+  /* line 94, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item {
     margin: 0 10px;
     padding: 0 10px;
   }
-  /* line 96, ../sass/_media.scss */
+  /* line 97, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .logo {
     max-width: 170px;
   }
-  /* line 99, ../sass/_media.scss */
+  /* line 100, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .logo img {
     max-width: 100%;
   }
-  /* line 104, ../sass/_media.scss */
+  /* line 105, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .img-wrapper {
     max-width: 228px;
     width: 100%;
     height: auto;
   }
-  /* line 111, ../sass/_media.scss */
+  /* line 112, ../sass/_media.scss */
+  .slider-section .shopfloristqueen-slider .slick-center .slider-item .img-wrapper-main {
+    max-width: 85%;
+    margin: 20px auto;
+    max-height: 350px;
+    overflow: hidden;
+  }
+  /* line 118, ../sass/_media.scss */
+  .slider-section .shopfloristqueen-slider .slick-center .slider-item .img-wrapper-main img {
+    display: block;
+    width: auto;
+    height: 380px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 127, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .item-description {
     width: auto;
     font-size: 15px;
     line-height: 18px;
   }
-  /* line 117, ../sass/_media.scss */
+  /* line 133, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .latest-price {
     width: 85px;
     font-size: 22px;
     line-height: 32px;
   }
-  /* line 122, ../sass/_media.scss */
+  /* line 138, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .latest-price:before {
     top: 16px;
     left: 8px;
   }
-  /* line 128, ../sass/_media.scss */
+  /* line 144, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .new-price {
     font-size: 27px;
     line-height: 39px;
   }
-  /* line 133, ../sass/_media.scss */
+  /* line 149, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .buy-btn {
     width: 127px;
     height: 33px;
@@ -525,103 +568,103 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
     line-height: 33px;
     border-radius: 7px;
   }
-  /* line 141, ../sass/_media.scss */
+  /* line 157, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .for-delivery-title {
     font-size: 20px;
     line-height: 22px;
   }
-  /* line 151, ../sass/_media.scss */
+  /* line 167, ../sass/_media.scss */
   .slider-section .text-block .img-wrapper {
     margin: 55px auto 24px;
   }
-  /* line 156, ../sass/_media.scss */
+  /* line 172, ../sass/_media.scss */
   .slider-section .text-block p span {
     display: block;
     margin: 20px 0;
   }
 
-  /* line 165, ../sass/_media.scss */
+  /* line 181, ../sass/_media.scss */
   footer .copyright {
     padding: 10px 0;
   }
 }
 @media (min-width: 1024px) {
-  /* line 173, ../sass/_media.scss */
+  /* line 189, ../sass/_media.scss */
   header .page-sign {
     margin: 12px auto 47px;
   }
 
-  /* line 179, ../sass/_media.scss */
+  /* line 195, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider {
     width: auto;
     max-height: 610px;
     min-height: 610px;
     overflow: hidden;
   }
-  /* line 185, ../sass/_media.scss */
+  /* line 201, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .fa-angle-left {
     left: 0;
   }
-  /* line 189, ../sass/_media.scss */
+  /* line 205, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .fa-angle-right {
     right: 0;
   }
-  /* line 193, ../sass/_media.scss */
+  /* line 209, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-list {
     margin: 0 15px;
     padding: 0 0 0 18px !important;
   }
-  /* line 198, ../sass/_media.scss */
+  /* line 214, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide {
     margin: 57px 0;
   }
-  /* line 201, ../sass/_media.scss */
+  /* line 217, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item {
     max-width: 280px;
   }
-  /* line 204, ../sass/_media.scss */
+  /* line 220, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item .logo {
     max-width: 160px;
     margin: 18px auto 0;
   }
-  /* line 209, ../sass/_media.scss */
+  /* line 225, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item .img-wrapper {
     width: 100%;
     overflow: hidden;
     height: 100%;
   }
-  /* line 213, ../sass/_media.scss */
+  /* line 229, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item .img-wrapper img {
     max-width: auto;
     width: 190px;
     display: block;
     margin: 0 auto;
   }
-  /* line 221, ../sass/_media.scss */
+  /* line 237, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item .item-description {
     width: 215px;
     font-size: 13px;
     letter-spacing: -1px;
   }
-  /* line 227, ../sass/_media.scss */
+  /* line 243, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item .latest-price {
     width: 60px;
     font-size: 17px;
     padding-left: 7px;
   }
-  /* line 232, ../sass/_media.scss */
+  /* line 248, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item .latest-price:before {
     top: 7px;
     left: 6px;
     width: 95%;
   }
-  /* line 239, ../sass/_media.scss */
+  /* line 255, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item .new-price {
     margin: 13px auto 0;
     font-size: 28px;
     line-height: 30px;
   }
-  /* line 245, ../sass/_media.scss */
+  /* line 261, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item .buy-btn {
     width: 100px;
     height: 32px;
@@ -629,47 +672,47 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
     font-size: 15px;
     line-height: 31px;
   }
-  /* line 253, ../sass/_media.scss */
+  /* line 269, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-slide .slider-item .for-delivery-title {
     margin: 15px auto 24px;
     font-size: 20px;
     line-height: 27px;
   }
-  /* line 261, ../sass/_media.scss */
+  /* line 277, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center {
     min-width: 323px;
     margin: 30px 0;
   }
-  /* line 265, ../sass/_media.scss */
+  /* line 281, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item {
     margin: 0;
     padding: 0 0px;
     min-width: 300px;
   }
-  /* line 269, ../sass/_media.scss */
+  /* line 285, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .logo {
     max-width: 170px;
     margin: 23px auto 0;
   }
-  /* line 272, ../sass/_media.scss */
+  /* line 288, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .logo img {
     max-width: 100%;
   }
-  /* line 277, ../sass/_media.scss */
+  /* line 293, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .img-wrapper {
     width: 228px;
     height: auto;
   }
-  /* line 281, ../sass/_media.scss */
+  /* line 297, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .img-wrapper img {
     margin: 0 auto;
     width: 220px;
   }
-  /* line 287, ../sass/_media.scss */
+  /* line 303, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .item-description {
     margin-top: -7px;
   }
-  /* line 291, ../sass/_media.scss */
+  /* line 307, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .latest-price {
     width: 95px;
     font-size: 21px;
@@ -679,20 +722,20 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
     margin: 6px auto 0;
     letter-spacing: -1px;
   }
-  /* line 300, ../sass/_media.scss */
+  /* line 316, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .latest-price:before {
     top: 15px;
     left: 17px;
     width: 72px;
   }
-  /* line 308, ../sass/_media.scss */
+  /* line 324, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .new-price {
     font-size: 31px;
     line-height: 39px;
     margin: 3px auto;
     letter-spacing: 2px;
   }
-  /* line 315, ../sass/_media.scss */
+  /* line 331, ../sass/_media.scss */
   .slider-section .shopfloristqueen-slider .slick-center .slider-item .buy-btn {
     width: 117px;
     height: 37px;
@@ -701,11 +744,11 @@ footer .copyright .copyright-sign a:nth-of-type(2) {
     border-radius: 7px;
     margin: 13px auto 0;
   }
-  /* line 330, ../sass/_media.scss */
+  /* line 346, ../sass/_media.scss */
   .slider-section .text-block .img-wrapper {
     margin: 50px auto 19px;
   }
-  /* line 334, ../sass/_media.scss */
+  /* line 350, ../sass/_media.scss */
   .slider-section .text-block p {
     margin: 0 auto 29px;
   }
