@@ -5,7 +5,7 @@ $(document).ready(function(){
   $('.shopfloristqueen-slider').slick({
     centerMode: true,
     autoplay: true,
-    autoplaySpeed: 3000000,
+    autoplaySpeed: 3000,
     infinite: true,
     speed: 1000,
     centerPadding: '20px',
